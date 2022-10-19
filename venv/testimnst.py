@@ -4,6 +4,8 @@ from tkinter import messagebox
 import requests
 import json
 
+s = s
+
 root = tk.Tk()
 root.title("Währungsrechner")
 root.geometry("500x600")
