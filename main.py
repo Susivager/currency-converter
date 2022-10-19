@@ -1,174 +1,74 @@
-from turtle import *
-import turtle as schildi
-import time
+import tkinter as tk
+from tkinter import ttk
+from tkinter import messagebox
+import requests
+import json
 
+root = tk.Tk()
+root.title("Währungsrechner")
+root.geometry("500x600")
+root.resizable(width=False, height=False)
 
 
 
-schildi.hideturtle()
-schildi.bgcolor("gray")
-schildi.setup(500,300)
+#Funktions
+def berechnen():
+    currency1 = entry1.get()
+    currency2 = entry2.get()
+    amount = entry3.get()
 
-from turtle import Screen, Turtle
+    url = "https://api.apilayer.com/exchangerates_data/convert?to=" + str(currency2) \
+          + "&from=" + str(currency1) \
+          + "&amount=" + str(amount) \
+          + ""
+    payload = {}
+    headers = {
+        "apikey": "mU6bap1imPwGt4R9RU6xwXwDHg1EFVYn"
+    }
 
-def click(x, y):
-    if -40 <= x <= 40 and -20 <= y <= 20:
-        turtle.write("Thank you!", align='center', font=('Arial', 18, 'bold'))
+    response = requests.request("GET", url, headers=headers, data=payload)
+    status_code = response.status_code
+    resultrequest = response.text
+    result = json.loads(resultrequest)
+    ttk.Label(root, text=result["result"]).pack()
 
 
 
 
+#Texte
+label1 = tk.Label(root, text="Umzurechnende Währung", height=2)
+label2 = tk.Label(root, text="Zielwährung", height=2)
+label3 = tk.Label(root, text="Betrag", height=2)
 
-#Währungswerte etc
-#CHF
-chfusd = 1.05
-chftry = 18.88
-chfeur = 1.03
-chfgbp = 0.87
-chfrub = 62.79
-chfbyn = 2.64
+#Leere
+leer1 = tk.Label(root, text="", height=1)
+leer2 = tk.Label(root, text="", height=1)
+#Eingaben
+entry1 = ttk.Entry(root, width=70)
+entry2 = ttk.Entry(root, width=70)
+entry3 = ttk.Entry(root, width=70)
+#Buttons
+button1 = ttk.Button(root, text="Berechnen", command=berechnen)
 
+#Pack
+label1.pack()
+entry1.pack()
+label2.pack()
+entry2.pack()
+label3.pack()
+entry3.pack()
+leer1.pack()
+button1.pack()
+leer2.pack()
 
 
 
 
 
 
-#Code
 
-def chf(erstewährung, erstewährungzahl, zweitewährung):
-    if zweitewährung == "CHF":
-        schildi.write("Du kannst CHF nicht in CHF umrechnen", True, align="center")
-        schildi.bgcolor("orange")
-    elif zweitewährung == "TRY":
-        ergebniss = erstewährungzahl * chftry
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
-    elif zweitewährung == "EUR":
-        ergebniss = erstewährungzahl * chfeur
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
-    elif zweitewährung == "USD":
-        ergebniss = erstewährungzahl * chfusd
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
-    elif zweitewährung == "GPB":
-        ergebniss = erstewährungzahl * chfgbp
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
-    elif zweitewährung == "RUB":
-        ergebniss = erstewährungzahl * chfrub
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
-    elif zweitewährung == "BYN":
-        ergebniss = erstewährungzahl * chfbyn
-        schildi.write(ergebniss, True, align="right")
-        schildi.bgcolor("green")
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-ergebniss = ""
-
-schildi.title("Währungsrechner")
-erstewährung = schildi.textinput("Wähle die 1 Währung aus z.b. $, etc", "Währung:")
-erstewährungzahl = schildi.numinput("Eingabe", "Umzurechnender Betrag")
-zweitewährung = schildi.textinput("Eingabe", "In welche Währung willst du den Betrag umrechnen")
-
-nil = ""
-
-if erstewährung == "CHF":
-    chf(erstewährung, erstewährungzahl, zweitewährung)
-elif erstewährung == "TRY":
-    print("lool")
-else:
-    schildi.write("Fehler: Du hast keine Gültige Währung angegeben, gültige Währungen sind: CHF EUR RUB BEL USD AND SBS DSA DSH DSA", True, align="center")
-    schildi.bgcolor("red")
-    schildi.setup(900, 300)
-
-
-
-
-
-
-#Fehler Meldungen
-if erstewährung == nil:
-    #schildi.write("Fehler: Du musst eine Grundwährung angeben", True, align="center")
-    schildi.bgcolor("red")
-if erstewährungzahl == nil:
-    schildi.write("Fehler: Du musst einen Betrag eingeben der Berechnet werden soll angeben", True, align="center")
-    schildi.bgcolor("red")
-if erstewährungzahl <= 0:
-    schildi.write("Fehler: Der Betrag muss über 0 sein", True, align="center")
-    schildi.bgcolor("red")
-if zweitewährung == nil:
-    schildi.write("Fehler: Du hast keine Gültige Währung angegeben in die der Betrag gerechnet werden soll, gültige Währungen sind: CHF EUR RUB BEL USD AND SBS DSA DSH DSA", True, align="center")
-    schildi.bgcolor("red")
-    schildi.setup(900, 300)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-done()
-
-
-
+root.mainloop()
