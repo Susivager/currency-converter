@@ -1,0 +1,168 @@
+----------------------------------------------------------
+             Alle Verfuegbaren Waehrungen
+
+ 1. Spalte ISO- Code 2. Spalte Nummer 3. Spalte Name
+----------------------------------------------------------
+
+AED	784	Vereinigte Arabische Emirate-Dirham
+AFN	971	Afghanischer Afghani
+ALL	008	Albanischer Lek
+AMD	051	Armenischer Dram
+ANG	532	Niederländische Antillen Gulden
+AOA	973	Angolanischer Kwanza
+ARS	032	Argentinischer Peso
+AUD	036	Australischer Dollar
+AWG	533	Aruba Florin
+AZN	944	Aserbaidschan-Manat
+BAM	977	Bosnien Herzegowina Konvertible Mark
+BBD	052	Barbados Dollar
+BDT	050	Bangladesch Teka
+BGN	975	Bulgarische Lew
+BHD	048	Bahrain Dinar
+BIF	108	Burundi-Franc
+BMD	060	Bermuda Dollar
+BND	096	Brunei Dollar
+BOB	068	Bolivischer Boliviano
+BOV	984	Mvdol
+BRL	986	Brasilianischer Real
+BSD	044	Bahamas Dollar
+BTN	064	Bhutan-Ngultrum
+BWP	072	Botsuana-Pula
+BYR	974	Weissrussischer Rubel
+BZD	084	Belize Dollar
+CAD	124	Kanadischer Dollar
+CDF	976	Kongo Franc
+CHF	756	Schweizer Franken
+CLP	152	Chilenischer Peso
+CNY	156	Chinesischer Renminbi/Yuan
+COP	170	Kolumbianischer Peso
+CRC	188	Costa Rica Colon
+CUP	192	Kubanischer Peso
+CVE	132	Kap Verde Escudo
+CZK	203	Tschechische Krone
+DJF	262	Dschibuti Franc
+DKK	208	Daenische Krone
+DOP	214	Dominikanische Republik Peso
+DZD	012	Algerischer Dinar
+EEK	233	Estnische Krone
+EGP	818	Aegyptisches Pfund
+ERN	232	Nakfa
+ETB	230	Aethiopischer Birr
+EUR	978	Europäische Währungsunion
+FJD	242	Fidschi Dollar
+FKP	238	Falklandinseln Pfund
+GBP	826	Britisches Pfund
+GEL	981	Georgischer Lari
+GHS	936	Ghana-Cedi
+GIP	292	Gibraltar Pfund
+GMD	270	Gambia-Dalasi
+GNF	324	Guinea Franc
+GTQ	320	Guatemala Quetzal
+GWP	624	Guinea-Bissau Peso
+GYD	328	Guyana Dollar
+HKD	344	Hongkong-Dollar
+HNL	340	Honduras-Lempira
+HRK	191	Kroatische Kuna
+HTG	332	Haiti Gourde
+HUF	348	Ungarischer Forint
+IDR	360	Indonesische Rupiah
+ILS	376	Israelischer Schekel
+INR	356	Indische Rupie
+IQD	368	Irakischer Dinar
+IRR	364	Iranischer Rial
+ISK	352	Isländische Krone
+JMD	388	Jamaika Dollar
+JOD	400	Jordanischer Dinar
+JPY	392	Japanischer Yen
+KES	404	Kenia Schilling
+KGS	417	Kirgisistan-Som
+KHR	116	Kambodschanischer Riel
+KMF	174	Komoren Franc
+KPW	408	Nordkoreanischer Won
+KRW	410	Suedkoreanischer Won
+KWD	414	Kuwaitischer Dinar
+KYD	136	Kaimaninseln Dollar
+KZT	398	Kasachstan-Tenge
+LAK	418	Laos Kip
+LBP	422	Libanesisches Pfund
+LKR	144	Sri Lanka Rupie
+LRD	430	Liberia Dollar
+LSL	426	Lesotho Loti
+LTL	440	Litauischer Litas
+LVL	428	Lettischer Lats
+LYD	434	Libyscher Dinar
+MAD	504	Marokkanischer Dirham
+MDL	498	Moldau-Leu
+MGA	969	Madagaskar-Ariary
+MKD	807	Mazedonischer Denar
+MMK	104	Myanmar Kyat
+MNT	496	Mongolischer Tugrik
+MOP	446	Macao Pataca
+MRO	478	Mauretanischer Ouguiya
+MUR	480	Mauritius-Rupie
+MVR	462	Malediven Rufiyaa
+MWK	454	Malawi-Kwacha
+MXN	484	Mexikanischer Peso
+MYR	458	Malaysischer Ringgit
+MZN	943	Mosambik Mentical
+NAD	516	Namibia Dollar
+NGN	566	Nigerianischer Naira
+NIO	558	Nicaragua Cordoba Oro
+NOK	578	Norwegische Krone
+NPR	524	Nepal Rupie
+NZD	554	Neuseeländischer Dollar
+OMR	512	Oman-Rial
+PAB	590	Panama Balboa
+PEN	604	Peruanischer Nuevo Sol
+PGK	598	Papua-Neuguinea Kina
+PHP	608	Philippinischer Peso
+PKR	586	Pakistanische Rupie
+PLN	985	Polnischer Zloty
+PYG	600	Paraguay-Guarani
+QAR	634	Katar-Riyal
+RON	946	Rumänischer Leu (neu)
+RSD	941	Serbischer Dinar
+RUB	643	Russischer Rubel
+RWF	646	Ruanda Franc
+SAR	682	Saudischer Rial (Riyal)
+SBD	090	Salomonen Dollar
+SCR	690	Seychellen-Rupie
+SDG	938	Sudanesischer Dinar
+SEK	752	Schwedische Krone
+SGD	702	Singapur-Dollar
+SHP	654	St. Helena Pfund
+SKK	703	Slowakische Krone
+SLL	694	Sierra Leone Leon
+SOS	706	Somalischer Schilling
+SRD	968	Suriname Dollar
+STD	678	Sao Tome Principe-Dobra
+SVC	222	El Salvador-Colon
+SYP	760	Syrisches Pfund
+SZL	748	Swasiland-Lilangeni
+THB	764	Thailaendischer Baht
+TJS	972	Tadschikistan-Somoni
+TMM	795	Turkmenistan-Menat
+TND	788	Tunesischer Dinar
+TOP	776	Tonga-Pa'anga
+TRY	949	Tuerkische Lira (neu)
+TTD	780	Trinidad und Tobago Dollar
+TWD	901	Taiwanesischer Dollar
+TZS	834	Tansanischer Schilling
+UAH	980	Ukrainischer Griwna (Hrywnja)
+UGX	800	Uganda Schilling
+USD	840	US Dollar
+UYU	858	Uruguay-Peso
+UZS	860	Usbekistan-Sum
+VND	704	Vietnamesischer Dong
+VUV	548	Vanuatu-Vatu
+WST	882	Samoa-Tala
+YER	886	Jemenitischer Rial
+ZAR	710	Suedafrikanischer Rand
+ZMK	894	Sambischer Kwacha
+
+----------------------------------------------------------
+
+Einige Waehrungen koennten nicht Funktionieren da sie
+veraltet sind und abgeschaft wurden.
+
+----------------------------------------------------------
