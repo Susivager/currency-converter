@@ -12,7 +12,7 @@ from winotify import Notification
 # Der Rechner wird am besten auf einem Windows System verwendet da sonst einige  #
 # Funktionen wie die Benachrichtigungen nicht Funktionieren. Dazu muss die Datei #
 #         waehrungen.txt im gleichen Ordner wie die main.py sein.                #
-#                                                                                #
+#            füge deinen API Key hier ein: insert_your_api_key.                  #
 ##################################################################################
 
 
@@ -55,7 +55,7 @@ def berechnen(): #Funktion holt sich von der API Exchangerates (https://apilayer
           + ""
     payload = {}
     headers = {
-        "apikey": "mU6bap1imPwGt4R9RU6xwXwDHg1EFVYn"
+        "apikey": "insert_your_api_key"
     }
 
     response = requests.request("GET", url, headers=headers, data=payload)
